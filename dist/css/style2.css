@@ -1,0 +1,492 @@
+/* Estilos base para la imagen */
+.imagen-ajustable {
+    max-width: 100%; /* La imagen nunca será más grande que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios no deseados debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    position: relative;
+    left: -170px;
+}
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 768px) {
+    .imagen-ajustable {
+        width: 55%; /* 65% del ancho del contenedor en pantallas grandes */
+        position: relative;
+        left: -50px;
+    }
+}
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .imagen-ajustable {
+        width: 70%; /* 40% del ancho del contenedor en pantallas pequeñas */
+        position: relative;
+        left: 0px;
+    }
+}
+/* Estilos base para la imagen */
+.imagen-ajustable-footer {
+    width: 45%; /* La imagen nunca será más grande que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios no deseados debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    position: relative;
+}
+/* Estilo general para los iconos */
+.img-icon {
+    position: absolute; 
+    width: 70px; 
+    right: 280px; 
+    top: 12%;
+}
+
+/* Estilo para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .img-icon {
+        width: 50px; /* Reducir tamaño de los iconos */
+        right: 20px;  /* Ajustar la distancia desde el borde derecho */
+        top: 10%;     /* Ajustar la posición vertical */
+    }
+}
+@media screen and (max-width: 358px) {
+    .img-icon {
+        width: 50px; /* Reducir tamaño de los iconos */
+        right: 20px;  /* Ajustar la distancia desde el borde derecho */
+        top: 10%;     /* Ajustar la posición vertical */
+    }
+}
+
+/* Estilo para pantallas grandes (tabletas o escritorios pequeños) */
+@media screen and (max-width: 1024px) {
+    .img-icon {
+        width: 39px;
+        right: 0px;
+        top: 14%;
+    }
+}
+
+/* Estilo para pantallas grandes (escritorios o pantallas más grandes) */
+@media screen and (min-width: 1025px) {
+    .img-icon {
+        width: 70px;  /* Mantener el tamaño original en pantallas grandes */
+        right: 280px; /* Mantener la misma posición horizontal */
+        top: 12%;     /* Mantener la misma posición vertical */
+    }
+}
+
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 768px) {
+    .imagen-ajustable-footer {
+        width: 50%; /* 60% del ancho del contenedor en pantallas grandes */
+        position: relative;
+        left: 0px;
+    }
+}
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .imagen-ajustable-footer {
+        width: 80%; /* 60% del ancho del contenedor en pantallas pequeñas */
+        position: relative;
+        left: 0px;
+    }
+}
+.horizontal-line {
+    width: 100%; /* El ancho será 100% del contenedor */
+    height: auto; /* Puedes ajustar la altura según lo desees */
+    background: linear-gradient(57deg, #17e5c6 0%, #0f667b 100%); /*linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%);*/
+    border: none; /* Elimina cualquier borde por defecto */
+    margin: 20px 0; /* Espaciado arriba y abajo de la línea */
+}
+.pdb10 {
+    padding-bottom: 10px;
+    height: 4px;
+    background: #33acd4;
+    background: rgb(0, 186, 238);
+    background: -moz-linear-gradient(90deg, rgba(0, 186, 238, 1) 0%, rgba(70, 189, 154, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 186, 238, 1) 0%, rgba(70, 189, 154, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 186, 238, 1) 0%, rgba(70, 189, 154, 1) 100%);
+    display: block;
+}
+
+.feature-extended-image {
+    position: relative; /* Para posicionar la imagen de forma absoluta dentro del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que ocupe todo el alto del contenedor */
+    opacity: 1;
+}
+.center-image {
+    position: absolute; /* Posicionamos la imagen de manera absoluta */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Asegura que el centro de la imagen esté exactamente en el centro */
+    max-width: 100%; /* La imagen no se desbordará */
+    max-height: 100%; /* La imagen no se desbordará */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin distorsionarla */
+    border-radius: 5px 5px 5px 5px;
+}
+/* SVG para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .logos-svg {
+        background-image: url('/img/logos2.svg');
+    }
+}
+
+.planes-svg {
+img {
+    height: 15%;
+    width: 25%;
+    vertical-align: middle;
+}}
+/* Estilos base para la imagen */
+.imagen-d {
+    height: auto;
+    max-width: 90%;
+    vertical-align: middle;
+    width: 16%;
+    text-align: right;
+    top: 303px;
+}
+/* General Section Styling */
+.features {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.features .section-title {
+    margin-bottom: 40px;
+    text-align: center; /* Centrar el título */
+}
+
+.features-wrap {
+    display: flex;  /* Usar flexbox en lugar de ruby-text */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Añadir un espacio entre los íconos */
+}
+
+/* Feature block */
+.feature {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.feature-inner {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-icon small {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Styling */
+
+/* Large screens (Desktop) */
+@media (min-width: 1025px) {
+    .feature {
+       /* width: 15%;   Each icon will take up 15% width (5 icons per row) */
+    }
+
+    .features .section-title {
+        font-size: 36px;
+    }
+}
+
+/* Tablets (Medium screens) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .feature {
+        /*  width: 25%; Each icon will take up 25% width (4 icons per row) */
+    }
+
+    .features .section-title {
+        font-size: 28px;
+    }
+}
+
+/* Mobile screens (Small screens) */
+@media (max-width: 640px) {
+    .feature {
+        width: 45%;  /* Each icon will take up 45% width (2 icons per row) */
+    }
+
+    .features .section-title {
+        font-size: 22px;
+    }
+
+    .feature-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Reduce padding on mobile */
+    .feature-inner {
+        padding: 15px;
+    }
+}
+
+    /* CSS personalizado */
+    .owl-carousel .item img {
+        width: 100%;        /* Las imágenes ocupan el 100% del contenedor */
+        height: auto;       /* Mantiene la proporción de las imágenes */
+    }
+
+
+    .owl-dots {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .owl-dot.active {
+        background-color: #007bff;
+    }
+
+/* Estilos de los campos de formulario */
+/* Estilos generales para el formulario */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+    border-color: #00A2B8; /* Color de enfoque */
+    box-shadow: 0 0 8px rgba(0, 162, 184, 0.2);
+}
+
+/* Estilo para el texto requerido */
+.required {
+    color: red;
+}
+
+/* Estilo para el botón */
+.form-btn-container {
+    text-align: center;
+}
+
+.button:active {
+    outline: 0;
+}
+
+.button::before {
+    border-radius: 2px;
+}
+
+.button-shadow {
+    position: relative;
+}
+
+.button-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 8px 24px rgba(32, 43, 54, 0.12);
+    mix-blend-mode: multiply;
+    transition: box-shadow 0.15s ease;
+}
+
+.button-shadow:hover::before {
+    box-shadow: 0 8px 24px rgba(32, 43, 54, 0.25);
+}
+
+.button-sm {
+    padding: 8px 24px;
+    height: 32px;
+}
+
+.button-sm.button-shadow::before {
+    box-shadow: 0 4px 16px rgba(32, 43, 54, 0.12);
+}
+
+.button-sm.button-shadow:hover::before {
+    box-shadow: 0 4px 16px rgba(32, 43, 54, 0.25);
+}
+
+.button-primary,
+.button-secondary {
+    color: #fff !important;
+    transition: background 0.15s ease;
+}
+
+.button-primary {
+    background: #00b9d2;
+    background: linear-gradient(65deg, #00A2B8 -25%, #00CFEB 100%);
+}
+
+.button-primary:hover {
+    background: #00bbd5;
+    background: linear-gradient(65deg, #00a4bb -25%, #00d1ee 100%);
+}
+
+.button-secondary {
+    background: #00cec5;
+    background: linear-gradient(65deg, #00A2B8 -25%, #00F9D2 100%);
+}
+
+.button-secondary:hover {
+    background: #00d1c7;
+    background: linear-gradient(65deg, #00a4bb -25%, #00fcd4 100%);
+}
+
+.button-block {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para los campos de entrada de tipo texto, teléfono, etc. */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-field input,
+    .form-field select {
+        padding: 10px 12px;
+    }
+
+    .button-sm {
+        padding: 10px 20px;
+    }
+}
+
+/* Configuración global para desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos adicionales para el botón */
+.scroll-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.scroll-btn:hover {
+    background-color: #45a049;
+}
+.owl-theme .owl-nav {
+    display: none;
+    margin-top: 10px;
+}
+.owl-carousel {
+    display: block;
+    visibility:visible ;
+    width: 100%;
+}
+.owl-carousel .item {
+    text-align: center;
+    background: #fff;
+    padding: 0px;
+    border-radius: 10px;
+}
+            
+.owl-carousel .item img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+            
+.owl-dots {
+    text-align: center;
+    padding-top: 10px;
+}
+            
+.owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+
+.owl-dot.active {
+    background-color: #007bff;
+}
